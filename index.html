@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Lotto</title>
+
+</head>
+
+<body style="font-size: 2em;">
+    <h1>JS Lotto</h1>
+    <div>
+        <p> How many numbers in this lotto? (min 1)</p>
+        <input type="number" id="maxNum" value="">
+        <p id="chosenMax" style="visibility: hidden;"></p>
+    </div>
+
+    <p>Remaining numbers:
+        <span id="remained">
+        </span>
+    </p>
+
+    <button onclick="shuffle(bag)">Shuffle</button>
+    <button onclick="pick()">Pick</button>
+    <button onclick="console.log('bag: '+ bag); console.log('hand: ' + bagOut);">test</button>
+    <h2 id="poppedNum" style="visibility: hidden;"></h2>
+    <h1 id="finished" style="visibility: hidden;"></h1>
+    <p id="hand"></p>
+    <script src="main.js"></script>
+</body>
+
+</html>
