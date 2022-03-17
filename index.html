@@ -13,13 +13,13 @@
     <h1>JS Lotto</h1>
     <div>
         <p> How many numbers in this lotto? (min 1)</p>
-        <input type="number" id="maxNum" value="">
+        <input type="number" id="maxNum" value="" min="1">
         <p id="chosenMax" style="visibility: hidden;"></p>
     </div>
 
     <p>Remaining numbers:
-        <span id="remained">
-        </span>
+        <div id="remained" style="color: chocolate; max-width: 50%; text-align: center; margin: auto;">
+        </div>
     </p>
 
     <button onclick="shuffle(bag)">Shuffle</button>
