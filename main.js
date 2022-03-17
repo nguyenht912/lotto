@@ -57,8 +57,7 @@ function shuffle() {
       bag[j] = k;
     }
     getEl("remained").innerHTML = bag.join(" , ");
-  }
-  else {
+  } else {
     getEl("finished").style.visibility = "visible";
     getEl("finished").innerHTML = `No numbers left!`;
   }
@@ -83,4 +82,17 @@ function pick() {
 
 function getEl(el) {
   return document.getElementById(el);
+}
+
+function resetGame() {
+  clrEl("hand");
+  clrEl("poppedNum");
+  clrEl("remained");
+  clrEl("finished");
+  resetArr(bag);
+  resetArr(bagOut);
+  getEl("finished").style.visibility = "hidden";
+  getEl("poppedNum").style.visibility = "hidden";
+  getEl("chosenMax").style.visibility = "hidden";
+  getEl("maxNum").value = "";
 }
