@@ -10,25 +10,28 @@
 </head>
 
 <body style="font-size: 2em;">
-    <h1>JS Lotto</h1>
     <div>
-        <p> How many numbers in this lotto? (min 1)</p>
-        <input type="number" id="maxNum" value="" min="1">
-        <p id="chosenMax" style="visibility: hidden;"></p>
+        <h1>JS Lotto</h1>
+        <div>
+            <p> How many numbers in this lotto? (min 1)</p>
+            <input type="number" id="maxNum" value="" min="1">
+            <p id="chosenMax" style="visibility: hidden;"></p>
+        </div>
+
+        <p>Remaining numbers:
+        <div id="remained" style="color: chocolate; max-width: 50%; text-align: center; margin: auto;">
+        </div>
+        </p>
+
+        <button onclick="shuffle(bag)">Shuffle</button>
+        <button onclick="pick()">Pick</button>
+        <button onclick="resetGame()">Reset</button>
+        <h2 id="poppedNum" style="visibility: hidden;"></h2>
+        <h1 id="finished" style="visibility: hidden;"></h1>
+        <p id="hand"></p>
+        <script src="main.js"></script>
     </div>
 
-    <p>Remaining numbers:
-    <div id="remained" style="color: chocolate; max-width: 50%; text-align: center; margin: auto;">
-    </div>
-    </p>
-
-    <button onclick="shuffle(bag)">Shuffle</button>
-    <button onclick="pick()">Pick</button>
-    <button onclick="resetGame()">Reset</button>
-    <h2 id="poppedNum" style="visibility: hidden;"></h2>
-    <h1 id="finished" style="visibility: hidden;"></h1>
-    <p id="hand"></p>
-    <script src="main.js"></script>
 </body>
 
 </html>
