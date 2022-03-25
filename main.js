@@ -1,3 +1,4 @@
+"use strict";
 //create an array contains n numbers (n=90)
 let maxNum, n;
 const bag = [];
